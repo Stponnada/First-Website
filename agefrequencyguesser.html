@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+
+<head>
+<title>
+Ill guess your age
+</title>
+</head>
+<body>
+    <nav class="w3-black w3-bar">
+    <a href= "#home"class="w3-button w3-bar-item">Home</a>
+    <a href= "#about"class="w3-button w3-bar-item">How our website works</a>
+    </nav>
+    <script>
+        alert("Welcome to age guesser! the process is simple.We'll play some sounds of different frequencies and all you have to do is tell us if you heard it or not.In the end we will guess your age");
+      </script>
+       <audio controls>
+        <source src="8000hz_sound.mp3" type="audio/mpeg">
+        <source src="8000hz_sound.mp3" type="audio/ogg">
+      Your browser does not support the audio element.
+      </audio>
+      <button onclick="myFunction()">Heard it!</button>
+
+<audio controls id="myaudio">
+  <source src="8000hz_sound.mp3" type="audio/mpeg">
+  <source src="8000hz_sound.mp3" type="audio/ogg">
+Your browser does not support the audio element.
+</audio>
+<script>
+function myFunction() {
+  var x = document.getElementById("myaudio");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+</body>
+</html>
